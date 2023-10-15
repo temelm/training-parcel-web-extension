@@ -1,0 +1,24 @@
+{
+  "name": "training-parcel-web-extension",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "parcel build src/manifest.json",
+    "cleanbuild": "npm run clean && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/temelm/training-parcel-web-extension.git"
+  },
+  "author": "Mustafa Temel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/temelm/training-parcel-web-extension/issues"
+  },
+  "homepage": "https://github.com/temelm/training-parcel-web-extension#readme",
+  "devDependencies": {
+    "@parcel/config-webextension": "^2.10.0",
+    "parcel": "^2.10.0"
+  }
+}
