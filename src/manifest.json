@@ -1,13 +1,20 @@
 {
-  "action": {
-    "default_popup": "popup/popup.html"
-  },
-  "description": "Training Parcel Web Extension",
-  "devtools_page": "devtools/devtools.html",
-  "icons": {
-    "128": "images/logo.png"
-  },
   "manifest_version": 3,
   "name": "Training Parcel Web Extension",
-  "version": "1.0.0"
+  "description": "Training Parcel Web Extension",
+  "version": "1.0.0",
+  "icons": {
+    "128": "./images/logo.png"
+  },
+  "action": {
+    "default_popup": "./popup/popup.html"
+  },
+  "devtools_page": "./devtools/devtools.html",
+  "content_scripts": [],
+  "web_accessible_resources": [
+    {
+      "resources": ["./devtools/panel/index.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }

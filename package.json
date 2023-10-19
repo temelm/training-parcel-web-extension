@@ -5,7 +5,8 @@
   "scripts": {
     "clean": "rm -rf dist",
     "build": "parcel build src/manifest.json",
-    "cleanbuild": "npm run clean && npm run build"
+    "cleanbuild": "npm run clean && parcel build src/manifest.json",
+    "dev": "parcel serve src/manifest.json"
   },
   "repository": {
     "type": "git",

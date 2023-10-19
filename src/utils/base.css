@@ -1,0 +1,42 @@
+:root {
+  --background-color: white;
+  --border-radius: 4px;
+  --font-family: monospace;
+  --text-color: #404040;
+
+  background-color: var(--background-color);
+  color: var(--text-color);
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 1rem;
+}
+
+button {
+  background-color: var(--text-color);
+  border: 1px solid var(--background-color);
+  border-radius: var(--border-radius);
+  color: var(--background-color);
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+button:hover {
+  color: red;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: var(--text-color);
+    color: var(--background-color);
+  }
+}
