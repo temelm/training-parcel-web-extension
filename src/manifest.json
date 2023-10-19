@@ -10,7 +10,13 @@
     "default_popup": "./popup/popup.html"
   },
   "devtools_page": "./devtools/devtools.html",
-  "content_scripts": [],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-scripts/hello.js"],
+      "run_at": "document_end"
+    }
+  ],
   "web_accessible_resources": [
     {
       "resources": ["./devtools/panel/index.html"],
