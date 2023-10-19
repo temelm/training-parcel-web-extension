@@ -17,6 +17,10 @@
       "run_at": "document_end"
     }
   ],
+  "background": {
+    "service_worker": "./background.js",
+    "type": "module"
+  },
   "web_accessible_resources": [
     {
       "resources": ["./devtools/panel/index.html"],
